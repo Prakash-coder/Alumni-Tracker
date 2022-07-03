@@ -9,7 +9,6 @@ django-filter==2.4.0
 django-heroku==0.3.1
 django-import-export==2.5.0
 nepali-date==2.0.5
-psycopg2==2.8.6
 pytz==2021.1
 simplejson==3.17.2
 sqlparse==0.4.1
