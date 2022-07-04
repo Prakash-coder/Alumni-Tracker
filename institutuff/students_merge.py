@@ -39,7 +39,7 @@ address_fields=[
     ]
 
 further_academic_status_fields=[
-        'level','status','program_name','country','institution','details'
+        'level','status','program_name','country','institution','details','journal',
     ]
 
 

@@ -91,6 +91,7 @@ class FurtherAcademicStatusForm(forms.ModelForm):
                     Column('institution', css_class='form-group col-md-6 mb-0'),
                     Column('program_name', css_class='form-group col-md-6 mb-0'),
                     Column('details', css_class='form-group col-md-8 mb-0'),
+                    Column('journal',css_class='form-group col-md-8 mb-0'),
                     Column('DELETE', css_class='form-group col-md-2 mb-0'),
                     css_class='form-row formset_row-{}'.format(formtag_prefix)
                 ),
@@ -102,7 +103,7 @@ class FurtherAcademicStatusForm(forms.ModelForm):
 
 FurtherAcademicStatusFormSet = inlineformset_factory(
     Student, FurtherAcademicStatus, form=FurtherAcademicStatusForm,
-    fields=['level', 'status', 'program_name', 'country', 'institution', 'details', ],
+    fields=['level', 'status', 'program_name', 'country', 'institution', 'details','journal' ],
     extra=1,
     can_delete=True,
 )

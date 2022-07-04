@@ -296,3 +296,7 @@ class FurtherAcademicStatus(models.Model):
         max_length=200,
         blank=True,
     )
+    journal = models.CharField(
+        max_length=200,
+        blank=True,
+    )

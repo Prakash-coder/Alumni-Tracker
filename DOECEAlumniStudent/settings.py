@@ -158,22 +158,22 @@ FILE_UPLOAD_MAX_MEMORY_SIZE = 52428800
 DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
 DBBACKUP_STORAGE_OPTIONS = {'location': BASE_DIR +'/'+ 'backup'}     #'/home/bob/DoeceAlumniStudentPortal/dbbackup/'}
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'doecealumnistudent',
-#         'USER': 'doecealumnistudentuser',
-#         'PASSWORD': 'password',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
 DATABASES = {
-    "default":{
-        "ENGINE":"django.db.backends.sqlite3",
-        'NAME':os.path.join(BASE_DIR,'db.sqlite3')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'doecealumnistudent',
+        'USER': 'doecealumnistudentuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
+# DATABASES = {
+#     "default":{
+#         "ENGINE":"django.db.backends.sqlite3",
+#         'NAME':os.path.join(BASE_DIR,'db.sqlite3')
+#     }
+# }
 
 # # PRODUCTION(Manaslu Server) START
 # # Database
